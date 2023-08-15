@@ -24,7 +24,7 @@ body, h1, h2, h3, p {
   }
   
   .header a {
-    color: #00ffcc;
+    color: #ee95ab;
     text-decoration: none;
   }
   
@@ -41,7 +41,7 @@ body, h1, h2, h3, p {
   
   .nav-menu a {
     font-size: 16px;
-    color: #ffffff;
+    color: #f9d6d6;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
   }
