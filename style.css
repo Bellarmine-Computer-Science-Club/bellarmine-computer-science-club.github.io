@@ -30,7 +30,8 @@ body, h1, h2, h3, p {
 }
 
 .header-wrap {
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 
 .header h1 {
