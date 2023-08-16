@@ -11,7 +11,8 @@ body, h1, h2, h3, p {
   padding: 20px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  position:relative;
+  position:fixed;
+  width: 100%;
   transition: padding 0.3s ease-in-out, height .3s ease-in-out;
 }
 
@@ -26,12 +27,6 @@ body, h1, h2, h3, p {
 
 .header.shrink p {
   display: none;
-}
-
-.header-wrap {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
 }
 
 .header h1 {
@@ -150,9 +145,4 @@ body, h1, h2, h3, p {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
-
-.main-content {
-  padding-top: 3rem;
-  z-index: 1;
 }
