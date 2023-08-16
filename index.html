@@ -7,10 +7,12 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     </head>
+
     <body>
+      <div class="header-wrap">
         <header class="header">
           <h1>Bellarmine Computer Science Club</h1>
-          <p>Welcome to the world of technology and innovation!</p>
+          <p>Welcome to our student made website</p>
           <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,6 +21,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </header>
+        </div>
 
         <section class="welcome-section">
           <div class="image-container">
@@ -43,4 +46,15 @@
         <h1>TEST</h1>
         <h1>TEST</h1>
     </body>
+    <script>
+      window.addEventListener("scroll", function() {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 50) {
+          header.classList.add("shrink");
+        } else {
+          header.classList.remove("shrink");
+        }
+      });
+    </script>
+    
 </html>
