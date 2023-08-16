@@ -86,9 +86,9 @@ body, h1, h2, h3, p {
     }
   
     .intro {
-      font-family: 'Roboto Mono', monospace;
       color: #333;
       line-height: 1.6;
+      ;
     }
   }
   
