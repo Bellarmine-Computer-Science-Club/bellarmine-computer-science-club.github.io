@@ -12,7 +12,6 @@ body, h1, h2, h3, p {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   position:relative;
-  z-index: 100;
   transition: padding 0.3s ease-in-out, height .3s ease-in-out;
 }
 
@@ -32,6 +31,7 @@ body, h1, h2, h3, p {
 .header-wrap {
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 .header h1 {
@@ -153,5 +153,6 @@ body, h1, h2, h3, p {
 }
 
 .main-content {
-  margin-top:15%;
+  margin-top: 20%;
+  z-index: 1;
 }
