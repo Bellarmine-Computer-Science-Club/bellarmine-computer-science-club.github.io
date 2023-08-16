@@ -75,14 +75,14 @@ body, h1, h2, h3, p {
     .container {
       max-width: 800px;
       margin: auto;
-      padding: 20px;
+      padding: 15px;
     }
   
     .event-card {
       background-color: #ffddd2;
-      border-radius: 5px;
+      border-radius: 3px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
+      padding: 15px;
       margin-bottom: 20px;
     }
   
@@ -127,11 +127,4 @@ body, h1, h2, h3, p {
       color: #333;
       margin: 0.5em 0;
     }
-  
-    footer {
-      text-align: center;
-      background-color: #006d77;
-      color: #fff;
-      padding: 0.5em 0;
-    }  
   
