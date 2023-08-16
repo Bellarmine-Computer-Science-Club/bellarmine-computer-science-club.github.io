@@ -129,8 +129,8 @@ body, h1, h2, h3, p {
     }
 
     .event-header {
-      size: 60px;
       text-align: center;
       padding: 15px;
+      color: #006d77;
     }
   
