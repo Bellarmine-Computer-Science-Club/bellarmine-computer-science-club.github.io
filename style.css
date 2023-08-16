@@ -153,6 +153,6 @@ body, h1, h2, h3, p {
 }
 
 .main-content {
-  padding-top: 3rem;
+  margin-top: 200px;
   z-index: 1;
 }
