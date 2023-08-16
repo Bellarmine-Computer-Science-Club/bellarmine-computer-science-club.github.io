@@ -11,7 +11,7 @@ body, h1, h2, h3, p {
   padding: 20px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  position:sticky;
+  position:fixed;
   z-index: 100;
   transition: padding 0.3s ease-in-out, height .3s ease-in-out;
 }
