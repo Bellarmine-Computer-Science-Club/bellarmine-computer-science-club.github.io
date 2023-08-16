@@ -99,6 +99,8 @@ body, h1, h2, h3, p {
   align-items: center;
   padding: 40px 0;
   background-color: #f7f7f7;
+
+  margin-top:100px;
 }
 
 .image-container {
