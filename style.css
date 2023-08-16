@@ -146,8 +146,3 @@ body, h1, h2, h3, p {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
-.main-content {
-  margin-top: 400px;
-  z-index: 1;
-}
