@@ -68,7 +68,7 @@ body, h1, h2, h3, p {
     }
   }
   
-    .header p {
+    .header h4 {
       font-size: 16px;
     }
 
@@ -114,7 +114,7 @@ body, h1, h2, h3, p {
   
     .event-info {
       flex: 1;
-      padding: 1em;
+      padding: 2em;
     }
   
     .event h2 {
