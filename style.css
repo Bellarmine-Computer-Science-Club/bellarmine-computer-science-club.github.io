@@ -11,6 +11,26 @@ body, h1, h2, h3, p {
   padding: 20px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  position:sticky;
+  z-index: 100;
+  transition: padding 0.3s ease-in-out, height .3s ease-in-out;
+}
+
+.header.shrink {
+  padding: 10px 0;
+  height:auto;
+}
+
+.header.shrink h1 {
+  font-size: 24px;
+}
+
+.header.shrink p {
+  display: none;
+}
+
+.header-wrap {
+  position: relative;
 }
 
 .header h1 {
