@@ -89,5 +89,33 @@ body, h1, h2, h3, p {
       color: #333;
       line-height: 1.6;
     }
+
+    .event {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+
+    .event img {
+      max-width: 300px;
+      margin-right: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  
+    .event-info {
+      flex: 1;
+    }
+  
+    .event h2 {
+      color: #333;
+      font-size: 1.5em;
+      margin: 0;
+    }
+  
+    .event p {
+      color: #777;
+      margin: 0.5em 0;
+    }
   }
   
