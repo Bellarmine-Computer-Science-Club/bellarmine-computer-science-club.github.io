@@ -174,6 +174,10 @@ body, h1, h2, h3, p {
 .home-title {
   font-family: 'Roboto Mono', monospace;
   font-size: 72px;
-  color:#006d77;
+  color: #ffddd2;
   text-align: center;
+  border: 3px solid #ffffff; /* Add a white border */
+  padding: 20px; /* Add padding to the text */
+  background-color: rgba(0, 0, 0, 0.6); /* Add a background color to the text */
+  backdrop-filter: blur(10px);
 }
