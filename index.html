@@ -59,17 +59,17 @@
               header.classList.remove("shrink");
             }
           });
-          const imageSections = document.querySelectorAll('.image-container');
+          const imageContainers = document.querySelectorAll('.image-container'); 
 
           window.addEventListener('scroll', () => {
-            const triggerOffset = window.innerHeight * 0.6; // Adjust the trigger offset as needed
+            const triggerOffset = window.innerHeight * 0.6;
 
-            imageSections.forEach(section => {
-              const rect = section.getBoundingClientRect();
+            imageContainers.forEach(container => { 
+              const rect = container.getBoundingClientRect(); 
               if (rect.top < triggerOffset) {
-                section.classList.add('reveal-text');
+                container.classList.add('reveal-text');
               } else {
-                section.classList.remove('reveal-text');
+                container.classList.remove('reveal-text'); 
               }
             });
           });
