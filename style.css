@@ -184,14 +184,25 @@ body, h1, h2, h3, p {
 
 .home-title {
   font-family: 'Roboto Mono', monospace;
-  font-size: 100px; /* Increase the font size for a commanding look */
-  font-weight: bold; /* Make the font weight bold */
+  font-size: 100px;
+  font-weight: bold;
   color: #ffddd2;
   text-align: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   z-index: 1;
+  position: relative; /* Add this to position the gradient overlay */
+}
+
+.home-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  border-radius: 10px;
+  z-index: -1;
 }
