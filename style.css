@@ -184,13 +184,14 @@ body, h1, h2, h3, p {
 
 .home-title {
   font-family: 'Roboto Mono', monospace;
-  font-size: 72px;
+  font-size: 100px; /* Increase the font size for a commanding look */
+  font-weight: bold; /* Make the font weight bold */
   color: #ffddd2;
   text-align: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
