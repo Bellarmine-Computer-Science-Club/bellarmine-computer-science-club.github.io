@@ -19,6 +19,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </header>
+          <section class="main-content">
           <div class="container">
             <div class="event-header">
               <div class="event-card">
@@ -54,5 +55,17 @@
               </div>
             </section>
           </main>
+          </section>
+
+          <script>
+            window.addEventListener("scroll", function() {
+              const header = document.querySelector(".header");
+              if (window.scrollY > 50) {
+                header.classList.add("shrink");
+              } else {
+                header.classList.remove("shrink");
+              }
+            });
+          </script>
     </body>
 </html>
