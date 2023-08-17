@@ -99,8 +99,6 @@ body, h1, h2, h3, p {
   align-items: center;
   padding: 40px 0;
   background-color: #f7f7f7;
-
-  margin-top:20%;
 }
 
 .image-container {
@@ -159,6 +157,7 @@ body, h1, h2, h3, p {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 10%;
 }
 
 .video-background {
