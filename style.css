@@ -169,6 +169,10 @@ body, h1, h2, h3, p {
   object-fit: cover;
 }
 
+section {
+  border: 1px #006d77;
+}
+
 .home-title {
   font-family: 'Roboto Mono', monospace;
   font-size: 72px;
