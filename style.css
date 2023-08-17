@@ -195,6 +195,19 @@ body, h1, h2, h3, p {
   position: relative; /* Add this to position the gradient overlay */
 }
 
+.home-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffddd2;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+}
+
 .home-title::before {
   content: "";
   position: absolute;
