@@ -58,6 +58,14 @@
               header.classList.remove("shrink");
             }
           });
+          const homeTitleSection = document.querySelector('.home-title-section');
+          const videoOverlay = document.querySelector('.video-overlay');
+
+          window.addEventListener('scroll', () => {
+            const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+            const overlayOpacity = 0.3 + (scrollPercentage * 0.3); // Adjust the range as needed
+            videoOverlay.style.opacity = overlayOpacity;
+          });
         </script>
     </body>
    
