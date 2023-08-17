@@ -154,12 +154,22 @@ body, h1, h2, h3, p {
 }
 
 .title {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust as needed for vertical centering */
-  background-color:#ffddd2;
+  height: 100vh;
 }
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .home-title {
   font-family: 'Roboto Mono', monospace;
