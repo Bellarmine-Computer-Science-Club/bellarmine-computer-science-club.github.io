@@ -153,16 +153,17 @@ body, h1, h2, h3, p {
   transition: opacity 0.3s ease-in-out;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 15px;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed for vertical centering */
+  background-color:#ffddd2;
 }
 
-.event-card {
-  background-color: #ffddd2;
-  border-radius: 3px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin-bottom: 20px;
+.home-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 72px;
+  color:#006d77;
+  text-align: center;
 }
