@@ -5,19 +5,6 @@ body, h1, h2, h3, p {
 }
 
 /* Header styles */
-/* Logo styles */
-.logo {
-  display: inline-block;
-  margin-right: auto;
-  margin-left: 20px; /* Add margin to create spacing between the logo and the h1 */
-}
-
-.logo img {
-  max-width: 130px; /* Adjust the size of your logo */
-  height: auto;
-}
-
-/* Rest of your existing CSS styles */
 .header {
   background-color: #006d77;
   color: #ffddd2;
