@@ -153,7 +153,7 @@ body, h1, h2, h3, p {
   transition: opacity 0.3s ease-in-out;
 }
 
-h1 {
+.title {
   text-align: center;
   padding: 15px;
   color: #006d77;
@@ -161,4 +161,6 @@ h1 {
   border-radius: 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  max-width: 800px;
+  margin: auto;
 }
