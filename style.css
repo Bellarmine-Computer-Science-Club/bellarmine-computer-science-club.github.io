@@ -8,7 +8,7 @@ body, h1, h2, h3, p {
 .header {
   background-color: #006d77;
   color: #ffddd2;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   position:fixed;
