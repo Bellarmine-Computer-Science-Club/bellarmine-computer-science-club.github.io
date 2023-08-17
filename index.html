@@ -59,32 +59,6 @@
               header.classList.remove("shrink");
             }
           });
-          const homeTitleSection = document.querySelector('.home-title-section');
-          const videoOverlay = document.querySelector('.video-overlay');
-          const videoBackground = document.querySelector('.video-background');
-          const sectionHeight = homeTitleSection.offsetHeight;
-          const fadeStart = sectionHeight * 0.7; // Start fading at 70% of the section height
-          const fadeEnd = sectionHeight * 0.9; // End fading at 90% of the section height
-
-          window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
-            let opacity = 0;
-
-            if (scrollPosition <= fadeStart) {
-              opacity = 0;
-            } else if (scrollPosition > fadeStart && scrollPosition <= fadeEnd) {
-              opacity = (scrollPosition - fadeStart) / (fadeEnd - fadeStart);
-            } else {
-              opacity = 1;
-            }
-
-            videoOverlay.style.opacity = opacity;
-          });
-
-          // Trigger the scroll event to set the initial opacity
-          window.addEventListener('load', () => {
-            window.dispatchEvent(new Event('scroll'));
-          });
         </script>
     </body>
    
