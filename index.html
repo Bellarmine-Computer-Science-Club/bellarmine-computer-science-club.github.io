@@ -59,14 +59,32 @@
               header.classList.remove("shrink");
             }
           });
+          // Add this to your HTML or an external JavaScript file
+
           const homeTitleSection = document.querySelector('.title');
           const videoOverlay = document.querySelector('.video-overlay');
+          const videoBackground = document.querySelector('.video-background');
+          const sectionHeight = homeTitleSection.offsetHeight;
+          const fadeStart = sectionHeight * 0.6; // Start fading at 70% of the section height
+          const fadeEnd = sectionHeight * 0.9; // End fading at 90% of the section height
 
           window.addEventListener('scroll', () => {
-            const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-            const overlayOpacity = 0.3 + (scrollPercentage * 0.3); // Adjust the range as needed
-            videoOverlay.style.opacity = overlayOpacity;
+            const scrollPosition = window.scrollY;
+            let opacity = 0;
+
+            if (scrollPosition <= fadeStart) {
+              opacity = 0;
+            } else if (scrollPosition > fadeStart && scrollPosition <= fadeEnd) {
+              opacity = (scrollPosition - fadeStart) / (fadeEnd - fadeStart);
+            } else {
+              opacity = 1;
+            }
+
+            videoOverlay.style.opacity = opacity;
           });
+
+// Trigger the scroll event to set the initial opacity
+window.dispatchEvent(new Event('scroll'));
         </script>
     </body>
    
