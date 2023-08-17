@@ -5,10 +5,10 @@ body, h1, h2, h3, p {
   }
   
  /* Header styles */
-.header {
+ .header {
   background-color: #006d77;
   color: #ffddd2;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   position:fixed;
@@ -22,6 +22,7 @@ body, h1, h2, h3, p {
 .header.shrink {
   padding: 10px 0;
   height:auto;
+  width: 100%;
 }
 
 .header.shrink h1 {
@@ -79,6 +80,7 @@ body, h1, h2, h3, p {
   background-color: #83c5be;
   margin-top: 15px;
 }
+
   /* Media query for responsiveness */
   @media screen and (max-width: 768px) {
     .header h1 {
