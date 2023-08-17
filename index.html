@@ -26,6 +26,7 @@
             <source src="pexels_videos_2278095 (1080p).mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
+          <div class="video-overlay"></div>
           <h1 class="home-title">Home</h1>
         </section>
 
@@ -58,7 +59,7 @@
               header.classList.remove("shrink");
             }
           });
-          const homeTitleSection = document.querySelector('.home-title-section');
+          const homeTitleSection = document.querySelector('.title');
           const videoOverlay = document.querySelector('.video-overlay');
 
           window.addEventListener('scroll', () => {
