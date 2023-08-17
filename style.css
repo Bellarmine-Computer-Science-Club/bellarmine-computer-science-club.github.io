@@ -81,6 +81,11 @@ body, h1, h2, h3, p {
 }
 
 /* Media query for responsiveness */
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .header h1 {
     font-size: 28px;
@@ -108,6 +113,7 @@ body, h1, h2, h3, p {
   margin: 20px;
   overflow: hidden;
   border-radius: 10px;
+  overflow: hidden;
   z-index: 50;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -123,8 +129,21 @@ body, h1, h2, h3, p {
   transform: scale(1.05);
 }
 
+
 .image-container:hover .text-overlay {
   opacity: 1;
+}
+
+.image-section .text-overlay {
+  /* Your existing image text styles */
+  opacity: 0; /* Initially hide the text */
+  transform: translateY(20px); /* Move the text down */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-section.reveal-text .text-overlay {
+  opacity: 1; /* Reveal the text */
+  transform: translateY(0); /* Move the text back to its original position */
 }
 
 .text-overlay p {

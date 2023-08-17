@@ -59,6 +59,20 @@
               header.classList.remove("shrink");
             }
           });
+          const imageSections = document.querySelectorAll('.image-container');
+
+          window.addEventListener('scroll', () => {
+            const triggerOffset = window.innerHeight * 0.6; // Adjust the trigger offset as needed
+
+            imageSections.forEach(section => {
+              const rect = section.getBoundingClientRect();
+              if (rect.top < triggerOffset) {
+                section.classList.add('reveal-text');
+              } else {
+                section.classList.remove('reveal-text');
+              }
+            });
+          });
         </script>
     </body>
    
